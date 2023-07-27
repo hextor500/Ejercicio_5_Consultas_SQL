@@ -37,7 +37,7 @@ SELECT COUNT(city), city.country_id, country.country FROM city INNER JOIN countr
 /*19 Consulta*/
 SELECT ROUND(AVG(rental_rate),2) FROM film;
 /*20 Consulta*/
-SELECT first_name, last_name, SUM(char_length(first_name) + char_length(last_name)) AS Longitud_nombre FROM actor GROUP BY actor_id ORDER BY SUM(char_length(first_name) + char_length(last_name)) DESC LIMIT 10;
+SELECT first_name, last_name, SUM(char_length(first_name) + char_length(last_name)) AS longitud_nombre FROM actor GROUP BY actor_id ORDER BY longitud_nombre DESC LIMIT 10;
 
 
 
